@@ -1,9 +1,9 @@
 # brave-installer
 Installer script in Python for simply installation Brave Web Browser on Linux.
 
-[CZ](https://github.com/vikdevelop/brave-installer/edit/main/README.md#cz)
+[CZ](https://github.com/vikdevelop/brave-installer/#cz)
 
-[EN](https://github.com/vikdevelop/brave-installer/edit/main/README.md#en)
+[EN](https://github.com/vikdevelop/brave-installer#en)
 
 <hr>
 
