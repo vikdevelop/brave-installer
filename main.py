@@ -2,7 +2,7 @@
 import os
 
 distro = input("Enter name of your Linux distro (e.g. fedora, opensuse, archlinux and debian): ")
-braveinstall = input("Want you install Brave: stable (s), beta (b) or nightly (n)? ")
+braveinstall = input("Want you install Brave: stable, beta or nightly? ")
 
 if distro == 'fedora':
     if braveinstall  == 'stable':
