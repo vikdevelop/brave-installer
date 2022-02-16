@@ -75,33 +75,36 @@ if distro == 'opensuse':
 
 if distro == 'archlinux':
     if braveinstall == 'stable':
-        print('\033[1m' + 'Downloading Brave-stable sources for Arch Linux...' + '\033[0m')
-        os.makedirs("archlinux-brave-stable")
-        os.chdir("archlinux-brave-stable")
-        os.system("git clone https://aur.archlinux.org/brave.git")
-        os.chdir("brave")
+        if not os.path.exists('archlinux-brave-stable'):
+            print('\033[1m' + 'Downloading Brave-stable sources for Arch Linux...' + '\033[0m')
+            os.makedirs("archlinux-brave-stable")
+            os.chdir("archlinux-brave-stable")
+            os.system("git clone https://aur.archlinux.org/brave.git")
+        os.chdir("archlinux-brave-stable/brave")
         os.system("makepkg PKGBUILD")
         os.system("sudo pacman -U ./brave-1.29.79-1-x86_64.tar.zst")
         print('\033[1m' + 'Brave stable pkg for Arch Linux was created successfully!' + '\033[0m')
         exit()
 
     if braveinstall == 'beta':
-        print('\033[1m' + 'Downloading Brave-beta sources for Arch Linux...' + '\033[0m')
-        os.makedirs("archlinux-brave-beta")
-        os.chdir("archlinux-brave-beta")
-        os.system("git clone https://aur.archlinux.org/brave-beta-bin.git")
-        os.chdir("brave-beta-bin")
+        if not os.path.exists('archlinux-brave-beta'):
+            print('\033[1m' + 'Downloading Brave-beta sources for Arch Linux...' + '\033[0m')
+            os.makedirs("archlinux-brave-beta")
+            os.chdir("archlinux-brave-beta")
+            os.system("git clone https://aur.archlinux.org/brave-beta-bin.git")
+        os.chdir("archlinux-brave-beta/brave-beta-bin")
         os.system("makepkg PKGBUILD")
         os.system("sudo pacman -U ./brave-beta-bin-1.36.94-1-x86_64.tar.zst")
         print('\033[1m' + 'Brave beta pkg for Arch Linux was created successfully!' + '\033[0m')
         exit()
 
     if braveinstall == 'nightly':
-        print('\033[1m' + 'Downloading Brave-nightly sources for Arch Linux...' + '\033[0m')
-        os.makedirs("archlinux-brave-nightly")
-        os.chdir("archlinux-brave-nightly")
-        os.system("git clone https://aur.archlinux.org/brave-nightly-bin.git")
-        os.chdir("brave-nightly-bin")
+        if not os.path.exists('archlinux-brave-nightly'):
+            print('\033[1m' + 'Downloading Brave-nightly sources for Arch Linux...' + '\033[0m')
+            os.makedirs("archlinux-brave-nightly")
+            os.chdir("archlinux-brave-nightly")
+            os.system("git clone https://aur.archlinux.org/brave-nightly-bin.git")
+        os.chdir("archlinux-brave-nightly/brave-nightly-bin")
         os.system("makepkg PKGBUILD")
         os.system("sudo pacman -U ./brave-nightly-bin-1.37.49-1-x86_64.tar.zst")
         print('\033[1m' + 'Brave nightly pkg for Arch Linux was created successfully!' + '\033[0m')
