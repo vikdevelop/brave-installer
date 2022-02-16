@@ -110,7 +110,7 @@ if distro == 'archlinux':
         print('\033[1m' + 'Brave nightly pkg for Arch Linux was created successfully!' + '\033[0m')
         exit()
 
-if distro == 'debain' or 'ubuntu' or 'linuxmint':
+if distro == 'debian' or 'ubuntu' or 'linuxmint':
     if braveinstall == 'stable':
         print("Installing apt-transport-https curl")
         os.system("sudo apt install apt-transport-https curl")
