@@ -40,7 +40,7 @@ chmod +x main.py
 <hr>
 
 ### UKR
-1. Клонуйте це сховище Git:
+1. Клонуйте це pепосітори Git:
 ```bash
 git clone https://github.com/vikdevelop/brave-installer.git
 ```
