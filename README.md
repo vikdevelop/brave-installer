@@ -5,6 +5,8 @@ Installer script in Python for simply installation Brave Web Browser on Linux.
 
 [EN](https://github.com/vikdevelop/brave-installer#en)
 
+[UKR](https://github.com/vikdevelop/brave-installer#ukr)
+
 <hr>
 
 #### EN
@@ -29,6 +31,20 @@ chmod +x main.py
 git clone https://github.com/vikdevelop/brave-installer.git
 ```
 2. Použij tyto příkazy:
+```bash
+cd brave-installer
+chmod +x main.py
+./main.py
+```
+
+<hr>
+
+### UKR
+1. Клонуйте це сховище Git:
+```bash
+git clone https://github.com/vikdevelop/brave-installer.git
+```
+2. Використовуйте ці команди:
 ```bash
 cd brave-installer
 chmod +x main.py
