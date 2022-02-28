@@ -25,6 +25,7 @@ chmod +x main.py
 <hr>
 
 #### CZ
+Instalační skript v Pythonu pro jednodušší instalaci webového prohlížeče Brave na Linuxu.
 ## Použití
 1. Naklonuj tento repositář:
 ```bash
@@ -39,7 +40,9 @@ chmod +x main.py
 
 <hr>
 
-### UKR
+#### UKR
+Сценарій встановлення на Python для простої установки Brave Web Browser на Linux.
+# використання
 1. Клонуйте це pепосітори Git:
 ```bash
 git clone https://github.com/vikdevelop/brave-installer.git
